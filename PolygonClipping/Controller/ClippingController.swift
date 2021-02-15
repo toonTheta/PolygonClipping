@@ -27,17 +27,22 @@ private enum Axis {
 private enum PointError: Error {
     case parallelLine
 }
-//"There is no intersection point due to lines are parallel"
+
 
 public class ClippingController {
     
     public var clipPolygon: Window = Window(xmin: 0, xmax: 0, ymin: 0, ymax: 0)
     public var polygon: Polygon = Polygon(points: [])
-    
     private var indexEdgeDict: [Int: Edge] = [0: .left, 1: .bottom, 2: .right, 3: .top]
-//    private lazy var edgeValueDict: [Edge: Int] = [.left: clipPolygon.xmin, .bottom: clipPolygon.ymin, .right: clipPolygon.xmax, .top: clipPolygon.ymax]
     
-    
+    /// Find the intersection from two given points and the polygon edge either vertical or horizontal
+    /// - Parameters:
+    ///   - endpointOne: First endpoint
+    ///   - endpointTwo: The other endpoint
+    ///   - edge: Polygon Edge
+    ///   - value: The value associate to the edge
+    /// - Throws: If there the line is parallel to the edge
+    /// - Returns: The intersection point
     private func solveTheIntersection(endpointOne: NSPoint, endpointTwo: NSPoint, edge: Edge, value: Int) throws -> NSPoint {
         
         if (edge == .top || edge == .bottom) && endpointOne.y == endpointTwo.y && endpointOne.y != CGFloat(value) {
@@ -55,9 +60,6 @@ public class ClippingController {
         let slope = (endpointOne.y - endpointTwo.y) / (endpointOne.x - endpointTwo.x)
         let c: CGFloat = endpointOne.y - (slope * endpointOne.x)
         
-//        print("Slope: \(slope)")
-//        print("c: \(c)")
-        
         switch edge {
         case .top, .bottom: return NSPoint(x: (CGFloat(value) - c)/slope , y: CGFloat(value))
         case .left, .right: return NSPoint(x: CGFloat(value), y: (slope * CGFloat(value)) + c )
@@ -65,7 +67,10 @@ public class ClippingController {
         
     }
     
-    private func edgeValueDict(edge: Edge) -> Int {
+    /// Get the window (clip polygon) edge value
+    /// - Parameter edge: Edge e.g. left, bottom, right, top
+    /// - Returns: the value of associated line
+    private func getEdgeAssociatedValue(edge: Edge) -> Int {
         switch edge {
         case .left: return clipPolygon.xmin
         case .bottom: return clipPolygon.ymin
@@ -75,6 +80,11 @@ public class ClippingController {
     }
     
     
+    /// Find the position of the specify point that is inside or outside the edge
+    /// - Parameters:
+    ///   - endpoint: the specify point
+    ///   - edge: polygon's side
+    /// - Returns: the position that is inside or outside
     private func getPointStatus(endpoint: NSPoint, edge: Edge) -> PointStatus {
         switch edge {
         case .left:
@@ -88,6 +98,11 @@ public class ClippingController {
         }
     }
     
+    /// Calculate new clipping result using Sutherland Algorithm
+    /// - Parameters:
+    ///   - edge: Polygon's Edge
+    ///   - points: The original points for the iteration
+    /// - Returns: New clipping points
     private func getNewClippingResult(edge: Edge, points: [NSPoint]) -> [NSPoint] {
         
         var result = [NSPoint]()
@@ -106,7 +121,7 @@ public class ClippingController {
                 break
                 
             case (.outside, .inside):
-                let intersection = try! solveTheIntersection(endpointOne: point, endpointTwo: nextPoint, edge: edge, value: edgeValueDict(edge: edge))
+                let intersection = try! solveTheIntersection(endpointOne: point, endpointTwo: nextPoint, edge: edge, value: getEdgeAssociatedValue(edge: edge))
                 result.append(intersection)
                 result.append(nextPoint)
                 
@@ -114,7 +129,7 @@ public class ClippingController {
                 result.append(nextPoint)
                 
             case (.inside, .outside):
-                let intersection = try! solveTheIntersection(endpointOne: point, endpointTwo: nextPoint, edge: edge, value: edgeValueDict(edge: edge))
+                let intersection = try! solveTheIntersection(endpointOne: point, endpointTwo: nextPoint, edge: edge, value: getEdgeAssociatedValue(edge: edge))
                 result.append(intersection)
                 
             }
@@ -142,7 +157,7 @@ public class ClippingController {
         
     }
     
-    /// Perform polygon clipping using Sutherland
+    /// Perform polygon clipping using Sutherland Algorithm
     public func performClipping() -> Polygon {
         
         print("Window: \(clipPolygon.getPoints())")
