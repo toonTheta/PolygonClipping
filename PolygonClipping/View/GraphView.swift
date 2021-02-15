@@ -41,7 +41,7 @@ class GraphView: NSView {
             drawPolygon(points: _delegate.getClippedPolygon(),color: NSColor.init(named: "ClippedLine")!)
         } else {
             drawPolygon(points: _delegate.getSubjectPolygonVertice(),color: .gray)
-            drawPolygon(points: _delegate.getClippedPolygon(),color: .cyan)
+            drawPolygon(points: _delegate.getClippedPolygon(),color: .blue)
         }
         
         
@@ -120,8 +120,6 @@ class GraphView: NSView {
     }
     
     func drawLine(lines: [(starting: NSPoint, ending:NSPoint)]) {
-        
-        
         let path = NSBezierPath()
         
         for line in lines {
