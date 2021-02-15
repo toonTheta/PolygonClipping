@@ -26,7 +26,7 @@
 		2D4378FA25D6BEF5000816A5 /* Window.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Window.swift; sourceTree = "<group>"; };
 		2D4378FF25D7954B000816A5 /* Polygon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Polygon.swift; sourceTree = "<group>"; };
 		2D43790725D79D65000816A5 /* NSPoint_Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSPoint_Extension.swift; sourceTree = "<group>"; };
-		2DDCFEC525CE655600E1DE23 /* PolygonClipping.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PolygonClipping.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2DDCFEC525CE655600E1DE23 /* Clipping Polygon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Clipping Polygon.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2DDCFEC825CE655600E1DE23 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2DDCFECA25CE655600E1DE23 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2DDCFECC25CE655700E1DE23 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -87,7 +87,7 @@
 		2DDCFEC625CE655600E1DE23 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2DDCFEC525CE655600E1DE23 /* PolygonClipping.app */,
+				2DDCFEC525CE655600E1DE23 /* Clipping Polygon.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -122,9 +122,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		2DDCFEC425CE655600E1DE23 /* PolygonClipping */ = {
+		2DDCFEC425CE655600E1DE23 /* Clipping Polygon */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2DDCFED525CE655700E1DE23 /* Build configuration list for PBXNativeTarget "PolygonClipping" */;
+			buildConfigurationList = 2DDCFED525CE655700E1DE23 /* Build configuration list for PBXNativeTarget "Clipping Polygon" */;
 			buildPhases = (
 				2DDCFEC125CE655600E1DE23 /* Sources */,
 				2DDCFEC225CE655600E1DE23 /* Frameworks */,
@@ -134,9 +134,9 @@
 			);
 			dependencies = (
 			);
-			name = PolygonClipping;
+			name = "Clipping Polygon";
 			productName = PolygonClipping;
-			productReference = 2DDCFEC525CE655600E1DE23 /* PolygonClipping.app */;
+			productReference = 2DDCFEC525CE655600E1DE23 /* Clipping Polygon.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -166,7 +166,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2DDCFEC425CE655600E1DE23 /* PolygonClipping */,
+				2DDCFEC425CE655600E1DE23 /* Clipping Polygon */,
 			);
 		};
 /* End PBXProject section */
@@ -345,8 +345,8 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
-				PRODUCT_BUNDLE_IDENTIFIER = THETA.PolygonClipping;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = THETA.ClippingPolygon;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -367,8 +367,8 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
-				PRODUCT_BUNDLE_IDENTIFIER = THETA.PolygonClipping;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = THETA.ClippingPolygon;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -386,7 +386,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2DDCFED525CE655700E1DE23 /* Build configuration list for PBXNativeTarget "PolygonClipping" */ = {
+		2DDCFED525CE655700E1DE23 /* Build configuration list for PBXNativeTarget "Clipping Polygon" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2DDCFED625CE655700E1DE23 /* Debug */,
