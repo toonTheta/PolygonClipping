@@ -1,0 +1,401 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2D4378F825D6BE6A000816A5 /* ClippingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D4378F725D6BE6A000816A5 /* ClippingController.swift */; };
+		2D4378FB25D6BEF5000816A5 /* Window.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D4378FA25D6BEF5000816A5 /* Window.swift */; };
+		2D43790025D7954B000816A5 /* Polygon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D4378FF25D7954B000816A5 /* Polygon.swift */; };
+		2D43790825D79D65000816A5 /* NSPoint_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D43790725D79D65000816A5 /* NSPoint_Extension.swift */; };
+		2DDCFEC925CE655600E1DE23 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DDCFEC825CE655600E1DE23 /* AppDelegate.swift */; };
+		2DDCFECB25CE655600E1DE23 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DDCFECA25CE655600E1DE23 /* ViewController.swift */; };
+		2DDCFECD25CE655700E1DE23 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2DDCFECC25CE655700E1DE23 /* Assets.xcassets */; };
+		2DDCFED025CE655700E1DE23 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DDCFECE25CE655700E1DE23 /* Main.storyboard */; };
+		2DDCFEDA25CE661B00E1DE23 /* Graph.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2DDCFED925CE661B00E1DE23 /* Graph.xib */; };
+		2DDCFEDD25CE664D00E1DE23 /* GraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DDCFEDC25CE664D00E1DE23 /* GraphView.swift */; };
+		2DDCFEE025CE692300E1DE23 /* NSBezierPath_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DDCFEDF25CE692300E1DE23 /* NSBezierPath_Extension.swift */; };
+		2DDCFEE525CE724100E1DE23 /* MainWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DDCFEE425CE724100E1DE23 /* MainWindow.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2D4378F725D6BE6A000816A5 /* ClippingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClippingController.swift; sourceTree = "<group>"; };
+		2D4378FA25D6BEF5000816A5 /* Window.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Window.swift; sourceTree = "<group>"; };
+		2D4378FF25D7954B000816A5 /* Polygon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Polygon.swift; sourceTree = "<group>"; };
+		2D43790725D79D65000816A5 /* NSPoint_Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSPoint_Extension.swift; sourceTree = "<group>"; };
+		2DDCFEC525CE655600E1DE23 /* PolygonClipping.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PolygonClipping.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2DDCFEC825CE655600E1DE23 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2DDCFECA25CE655600E1DE23 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2DDCFECC25CE655700E1DE23 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2DDCFECF25CE655700E1DE23 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2DDCFED125CE655700E1DE23 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2DDCFED225CE655700E1DE23 /* PolygonClipping.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PolygonClipping.entitlements; sourceTree = "<group>"; };
+		2DDCFED925CE661B00E1DE23 /* Graph.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Graph.xib; sourceTree = "<group>"; };
+		2DDCFEDC25CE664D00E1DE23 /* GraphView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphView.swift; sourceTree = "<group>"; };
+		2DDCFEDF25CE692300E1DE23 /* NSBezierPath_Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSBezierPath_Extension.swift; sourceTree = "<group>"; };
+		2DDCFEE425CE724100E1DE23 /* MainWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWindow.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2DDCFEC225CE655600E1DE23 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2D4378F325D6BE43000816A5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2DDCFEDC25CE664D00E1DE23 /* GraphView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2D4378F525D6BE4E000816A5 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2DDCFECA25CE655600E1DE23 /* ViewController.swift */,
+				2D4378F725D6BE6A000816A5 /* ClippingController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2D4378FD25D6BEFC000816A5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2D4378FA25D6BEF5000816A5 /* Window.swift */,
+				2D4378FF25D7954B000816A5 /* Polygon.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2DDCFEBC25CE655600E1DE23 = {
+			isa = PBXGroup;
+			children = (
+				2DDCFEC725CE655600E1DE23 /* PolygonClipping */,
+				2DDCFEC625CE655600E1DE23 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2DDCFEC625CE655600E1DE23 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2DDCFEC525CE655600E1DE23 /* PolygonClipping.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2DDCFEC725CE655600E1DE23 /* PolygonClipping */ = {
+			isa = PBXGroup;
+			children = (
+				2DDCFEC825CE655600E1DE23 /* AppDelegate.swift */,
+				2D4378FD25D6BEFC000816A5 /* Model */,
+				2D4378F525D6BE4E000816A5 /* Controller */,
+				2D4378F325D6BE43000816A5 /* View */,
+				2DDCFEE425CE724100E1DE23 /* MainWindow.swift */,
+				2DDCFEE225CE693900E1DE23 /* Extension */,
+				2DDCFECC25CE655700E1DE23 /* Assets.xcassets */,
+				2DDCFECE25CE655700E1DE23 /* Main.storyboard */,
+				2DDCFED925CE661B00E1DE23 /* Graph.xib */,
+				2DDCFED125CE655700E1DE23 /* Info.plist */,
+				2DDCFED225CE655700E1DE23 /* PolygonClipping.entitlements */,
+			);
+			path = PolygonClipping;
+			sourceTree = "<group>";
+		};
+		2DDCFEE225CE693900E1DE23 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				2DDCFEDF25CE692300E1DE23 /* NSBezierPath_Extension.swift */,
+				2D43790725D79D65000816A5 /* NSPoint_Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2DDCFEC425CE655600E1DE23 /* PolygonClipping */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2DDCFED525CE655700E1DE23 /* Build configuration list for PBXNativeTarget "PolygonClipping" */;
+			buildPhases = (
+				2DDCFEC125CE655600E1DE23 /* Sources */,
+				2DDCFEC225CE655600E1DE23 /* Frameworks */,
+				2DDCFEC325CE655600E1DE23 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PolygonClipping;
+			productName = PolygonClipping;
+			productReference = 2DDCFEC525CE655600E1DE23 /* PolygonClipping.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2DDCFEBD25CE655600E1DE23 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1230;
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					2DDCFEC425CE655600E1DE23 = {
+						CreatedOnToolsVersion = 12.3;
+					};
+				};
+			};
+			buildConfigurationList = 2DDCFEC025CE655600E1DE23 /* Build configuration list for PBXProject "PolygonClipping" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2DDCFEBC25CE655600E1DE23;
+			productRefGroup = 2DDCFEC625CE655600E1DE23 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2DDCFEC425CE655600E1DE23 /* PolygonClipping */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2DDCFEC325CE655600E1DE23 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2DDCFECD25CE655700E1DE23 /* Assets.xcassets in Resources */,
+				2DDCFEDA25CE661B00E1DE23 /* Graph.xib in Resources */,
+				2DDCFED025CE655700E1DE23 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2DDCFEC125CE655600E1DE23 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D43790025D7954B000816A5 /* Polygon.swift in Sources */,
+				2D43790825D79D65000816A5 /* NSPoint_Extension.swift in Sources */,
+				2DDCFECB25CE655600E1DE23 /* ViewController.swift in Sources */,
+				2DDCFEC925CE655600E1DE23 /* AppDelegate.swift in Sources */,
+				2D4378FB25D6BEF5000816A5 /* Window.swift in Sources */,
+				2DDCFEE525CE724100E1DE23 /* MainWindow.swift in Sources */,
+				2D4378F825D6BE6A000816A5 /* ClippingController.swift in Sources */,
+				2DDCFEE025CE692300E1DE23 /* NSBezierPath_Extension.swift in Sources */,
+				2DDCFEDD25CE664D00E1DE23 /* GraphView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2DDCFECE25CE655700E1DE23 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2DDCFECF25CE655700E1DE23 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2DDCFED325CE655700E1DE23 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2DDCFED425CE655700E1DE23 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		2DDCFED625CE655700E1DE23 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = PolygonClipping/PolygonClipping.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = BN2Z7V7S3V;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = PolygonClipping/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = THETA.PolygonClipping;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		2DDCFED725CE655700E1DE23 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = PolygonClipping/PolygonClipping.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = BN2Z7V7S3V;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = PolygonClipping/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = THETA.PolygonClipping;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2DDCFEC025CE655600E1DE23 /* Build configuration list for PBXProject "PolygonClipping" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2DDCFED325CE655700E1DE23 /* Debug */,
+				2DDCFED425CE655700E1DE23 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2DDCFED525CE655700E1DE23 /* Build configuration list for PBXNativeTarget "PolygonClipping" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2DDCFED625CE655700E1DE23 /* Debug */,
+				2DDCFED725CE655700E1DE23 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2DDCFEBD25CE655600E1DE23 /* Project object */;
+}
