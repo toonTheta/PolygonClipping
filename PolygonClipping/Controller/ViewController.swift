@@ -65,7 +65,8 @@ class ViewController: NSViewController {
     func prepareSubjectPolygonVertice() -> [NSPoint] {
         
         var points = [NSPoint]()
-        let strArr = polygonTextView.string.components(separatedBy: "->")
+        let str = polygonTextView.string.replacingOccurrences(of: " ", with: "", options: .regularExpression, range: nil)
+        let strArr = str.components(separatedBy: "->")
         
         strArr.forEach { (NSPointStr) in
             let pointString = NSPointStr.replacingOccurrences(of: "[(]|[)]", with: "",
